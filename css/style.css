@@ -1,0 +1,151 @@
+html {
+    font-family: 'Faustina', serif;
+    font-size: 1.25rem;
+    line-height: 1.6;
+    background-color: #f1f1f1;
+}
+
+.logo {
+    max-width: 10rem;
+    height: auto;
+}
+
+a {
+    color: inherit;
+    font-weight: bold;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.table-of-contents a {
+    font-weight: normal;
+}
+
+.plan {
+    border-top: 1px dashed #979797;
+    overflow: auto;
+    margin-top: 1rem;
+    padding-bottom: 2.25rem;
+}
+
+.plan:last-child {
+    border-bottom: 1px dashed #979797;
+}
+
+.plan__quote {
+    position: relative;
+    margin-bottom: .5rem;
+}
+
+.plan__quote::before{
+    content: "\201C";
+    font-family: Georgia, serif;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #979797;
+    position: absolute;
+    left: -2rem;
+    top: -1rem;
+}
+
+.plan__quote,
+.plan__source {
+    margin-left: 2rem;
+    display: inline-block;
+}
+
+.plan__status {
+    background-color: #3f3f3f;
+    margin-top: 2rem;
+    color: #fff;
+    padding: 0.75rem 1rem 1rem;
+}
+
+.status__checklist a:link,
+.status__checklist a:visited,
+.status__checklist a:active {
+    color: inherit;
+}
+
+.status__checklist li {
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.status__headline,
+.status__text {
+    margin: 0;
+}
+
+.status__text {
+    margin: .5rem 0;
+    opacity: .5;
+}
+
+.status__checklist input[type="checkbox"] {
+    position: absolute;
+    left: 0;
+    top: .4rem;
+}
+
+.header-main,
+.wrapper-main {
+    margin: auto;
+    max-width: 50rem;
+}
+
+.header-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+}
+
+.header-main__subtitle {
+    margin: .5rem 0 0;
+    text-align: center;
+}
+
+.header-main__title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+@media (max-width: 50em) {
+
+    html {
+        font-size: 1rem;
+        line-height: 1.5;
+        hyphens: auto;
+    }
+
+    .logo {
+        width: 5rem;
+    }
+
+    .header-main {
+        margin: 1rem;
+        padding: 0;
+    }
+
+    .header-main__title {
+        font-size: 2.5rem;
+    }
+
+    .header-main__subtitle {
+        line-height: 1.2;
+    }
+
+    .wrapper-main {
+        margin: 0 1rem;
+    }
+
+    .status__checklist input[type="checkbox"] {
+        top: 0;
+    }
+}
